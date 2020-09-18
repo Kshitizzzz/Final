@@ -1,0 +1,460 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+.logo img{
+    border-radius: 50%;
+}
+
+.body {
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #808080;
+}
+
+p {
+    color: black;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    /* both columns occupy 50% space */
+    min-width: 300px;
+}
+
+.col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+    
+}
+/* 
+.main img{
+    opacity: 0;
+} */
+
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+ 
+.btn {
+    display: inline-block;
+    background: black;
+    color: whitesmoke;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 3px;
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background: #563434;
+}
+
+.header {
+    background:#FFB6C1;
+    /* here we can add image and do some transitions */
+}
+
+.header .row {
+    margin-top: 70px;
+}
+
+.categories {
+    margin: 70px 0;
+}
+
+.col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col-3 img {
+    /* add effects*/
+    width: 100%;
+}
+
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom:50px ;
+    transition : transform 0.5s
+}
+
+.col-4 img{
+    width: 100%;
+
+}
+
+.title{
+    text-align: center;
+    margin:0 auto 50px;
+    position: relative;
+    line-height: 60px;
+}
+
+.title::after{
+    content: '';
+    background:#D3D3D3;
+    width:150px;
+    height: 5px;
+    position: absolute;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);
+    
+}
+
+h4{
+    font-weight: normal;
+
+}
+
+.col-4 p {
+    font-size: 14px;
+}
+
+.rating {
+    font-size: 10px;   
+}
+
+.col-4:hover{
+    transform: translateY(5px);
+}
+
+
+/* ..........brands.......... */
+
+.brands{
+    margin:100px auto
+}
+
+.col-5{
+    width:160px;
+}
+
+.col-5 img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(50%);
+}
+
+.col-5 img:hover{
+    filter: grayscale(0);
+}
+
+/* ---------footer------------- */
+
+.footer{
+    background:#696969 ;
+    color:white;
+    font-size: 14px;
+    padding : 60px 0 20px;
+    padding-bottom: 160px;
+}
+
+.footer p{
+    color:white;
+}
+
+.footer h3{
+    color:white;
+    margin-bottom: 20px;
+
+}
+
+.footer-col-1 , .footer-col-2 , .footer-col-3 , .footer-col-4{
+     min-width: 250px;                                             /* change if u extend the images*/
+     margin-bottom: 20px;
+     max-width: 25%;
+
+}
+
+
+
+.footer-col-1 ul , .footer-col-3 ul{
+    list-style-type:none;
+}
+
+.footer hr {
+    border:none;
+    background:black ;
+    height: 1px;
+    margin:20px;
+}
+
+.logo i{
+    padding-left: 30px ;
+    padding-top: 10px;
+}
+
+.logo{
+    justify-content: center;
+    text-align: center;
+}
+
+.logos{
+   
+    text-align: center;
+}
+
+
+/* --------Products html ------- */
+
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px ;
+}
+
+select{
+    border:solid 1px black ;
+    padding : 5px;
+}
+
+select:focus{
+    outline: none;
+}
+
+.page-btn{
+    margin: 0 auto 80px;
+}
+
+.page-btn span {
+    display: inline-block;
+    border : 1px solid gray;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.page-btn span:hover {
+    background : gray;
+    color:white;
+}
+
+
+/* ---------single product details-------- */
+
+
+.single-product{
+    margin-top: 80px;   
+}
+
+.single-product .col-2 img{
+    padding:0 ;
+}
+
+.single-product .col-2{
+    padding:20px;
+}
+
+.single-product h4{
+    margin: 15px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border : 1px solid black;
+}
+
+input:focus{
+    outline:none;
+}
+
+.single-product .fa{
+   color:grey; 
+   margin-left: 10px;
+}
+
+/* ------------small images-------- */
+
+.small-img-row {
+    display: flex;
+    justify-content: space-between;
+} 
+
+.small-img-col{
+     flex-basis: 24%;    /* cause we add four reference image*/
+     cursor: pointer;
+
+}
+
+
+/* --------cart item ---------- */
+
+.cart-page{
+    margin: 80px auto ;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;   
+}
+
+.cart-info{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+th{
+    text-align: left;
+    padding:5px;
+    color: white;
+    background-color: gray;
+    font-weight: normal;
+}
+
+td{
+    padding : 10px 5px;
+}
+
+td input{
+    width:40px;
+    height:30px;
+    padding:5px;
+}
+
+td a{
+    color: #ff523b;
+    font-size: 12px;
+}
+
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total-price table{
+    border-top:3px solid black;
+    width: 100%;
+    max-width: 370px;
+}
+
+ 
+td:last-child{
+     text-align: right;            /*this is to fix subtotal tax just below the subtotal   */
+}
+
+th:last-child{
+    text-align: right;
+}
+/* -------------- */
+
+/* 
+.main{
+    background-image: url('images/prodetail4.JPG');
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    transition:1s;
+    
+
+
+    animation-name:animate ;
+    animation-direction: alternate-reverse;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state:running ;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes animate{
+    0%{
+        background-image: url('images/RagaAsavari_14_800x.JPG');
+    }
+    20%{
+        background-image: url('images/RagaAsavari_23_800x.JPG');
+    }
+    40%{
+        background-image: url('images/RagaBrindavanSarang-18_800x.JPG');
+    }
+    60%{
+        background-image: url('images2/Flavia_Blouse_-3_800x.jpg');
+    }
+    80%{
+        background-image: url('images/RagaSahana_21_800x.JPG');
+    }
+    100%{
+        background-image: url('images/editpic-101_ff266aac-eb03-4948-8d10-f67a1fd16981_800x.jpg');
+    }
+} */
+
+
+/* ---------------------About Us---------------- */
+
+
+
+
+
+
+
+
+
